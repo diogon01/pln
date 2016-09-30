@@ -14,12 +14,13 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .state('resumo', {
-        url: '/',
-        templateUrl: 'app/resumo/resumo.html',
-        controller: 'ResumoController',
+      .state('tabs', {
+        url: '/plano',
+        templateUrl: 'app/tabs/tabs.html',
+        controller: 'MainController',
         controllerAs: 'main'
       });
+
 
     $urlRouterProvider.otherwise('/');
   }

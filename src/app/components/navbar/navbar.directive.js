@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -11,9 +11,8 @@
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
       scope: {
-          creationDate: '='
+        creationDate: '='
       },
-      link: linkFunc,
       controller: NavbarController,
       controllerAs: 'vm',
       bindToController: true
@@ -27,14 +26,8 @@
 
       // "vm.creationDate" is available by directive option "bindToController: true"
       vm.relativeDate = moment(vm.creationDate).fromNow();
-      vm.isOpenRight = function(){
-        return $mdSidenav('right').isOpen();
-      };
     }
 
-    function linkFunc(scope, mdSidenav) {
-
-    }
   }
 
 })();
