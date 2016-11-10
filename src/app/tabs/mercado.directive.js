@@ -6,17 +6,17 @@
 
   angular
     .module('pln')
-    .directive('sumarioExecutivo', sumarioExecutivo);
+    .directive('analiseMercado', analiseMercado);
 
   /** @ngInject */
-  function sumarioExecutivo() {
+  function analiseMercado() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/tabs/sumario.html',
+      templateUrl: 'app/tabs/mercado.html',
       scope: {
         creationDate: '='
       },
-      controller: SumarioController,
+      controller: MercadoController,
       controllerAs: 'vm',
       bindToController: true
     };
@@ -24,7 +24,7 @@
     return directive;
 
     /** @ngInject */
-    function SumarioController() {
+    function MercadoController() {
       var vm = this;
 
       vm.imagePath = 'assets/images/logo-big-black.svg';
