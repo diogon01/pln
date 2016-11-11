@@ -16,9 +16,6 @@
     var directive = {
       restrict: 'E',
       templateUrl: 'app/tabs/marketing.html',
-      scope: {
-        creationDate: '='
-      },
       controller: MarketingController,
       controllerAs: 'vm',
       bindToController: true
@@ -28,9 +25,7 @@
 
     /** @ngInject */
     function MarketingController() {
-      var vm = this;
 
-      vm.imagePath = 'assets/images/logo-big-black.svg';
     }
 
   }
