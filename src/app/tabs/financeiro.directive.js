@@ -12,7 +12,7 @@
   function planoOFinanceiro() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/tabs/operacional.html',
+      templateUrl: 'app/tabs/financeiro.html',
       controller: FinanceiroController,
       controllerAs: 'vm',
       bindToController: true
