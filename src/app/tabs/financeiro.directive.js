@@ -1,19 +1,19 @@
 /**
- * Created by Diogon on 10/11/2016.
+ * Created by Diogon on 11/11/2016.
  */
 (function () {
   'use strict';
 
   angular
     .module('pln')
-    .directive('planoMarketing', planoMarketing);
+    .directive('planoFinanceiro', planoOFinanceiro);
 
   /** @ngInject */
-  function planoMarketing() {
+  function planoOFinanceiro() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/tabs/marketing.html',
-      controller: MarketingController,
+      templateUrl: 'app/tabs/operacional.html',
+      controller: FinanceiroController,
       controllerAs: 'vm',
       bindToController: true
     };
@@ -21,11 +21,12 @@
     return directive;
 
     /** @ngInject */
-    function MarketingController() {
+    function FinanceiroController() {
 
     }
 
   }
 
 })();
+
 
