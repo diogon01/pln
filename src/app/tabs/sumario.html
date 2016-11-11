@@ -4,6 +4,9 @@
       <md-card-title-text>
         <span class="md-headline">1.1 Resumo do projeto (Conversa de elevador)</span>
       </md-card-title-text>
+      <div class="md-media-lg card-media">
+        <img ng-src="assets/images/logo-big-black.svg" alt="{{ awesomeThing.title }}">
+      </div>
       <md-card-title-media>
         <!--<div class="md-media-lg card-media">
           <img ng-src="assets/images/logo-big-black.svg" alt="{{ awesomeThing.title }}">
@@ -26,9 +29,6 @@
         <span class="md-headline">1.2 Informações sobre os sócios</span>
         <span class="md-subhead">-Diogo Henrique Fragoso de Oliveira.</span>
       </md-card-title-text>
-      <div class="md-media-lg card-media">
-        <img ng-src="assets/images/logo-big-black.svg" alt="{{ awesomeThing.title }}">
-      </div>
     </md-card-title>
     <md-card-content>
       <p>
@@ -46,10 +46,10 @@
         empresa.
       </p>
     </md-card-content>
-    <md-card-actions layout="row" layout-align="end center">
+    <!--<md-card-actions layout="row" layout-align="end center">
       <md-button>Action 1</md-button>
       <md-button>Action 2</md-button>
-    </md-card-actions>
+    </md-card-actions>-->
   </md-card>
 
   <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch flex="100">
